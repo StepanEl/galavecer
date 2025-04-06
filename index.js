@@ -8,6 +8,7 @@ if (dnes.isAfter(galavecer)) {
     document.body.innerHTML += `<p>SPrávě dnes probíhá galavečer.</p>`
 } else {
     document.body.innerHTML += `<h2>NE!</h2> <p>Studentky jsou ještě v procesu učení.</p>`;
-        document.body.innerHTML += `<p>Zbývá ${dnyZbyva} dní do galavečera.</p>`; // Přidání odpočtu
 
+    setTimeout(() => {
+        document.body.innerHTML += `<div>Zbývá ${dnyZbyva} dní do galavečera.</div>`}, 2000); // Přidání odpočtu
 }
